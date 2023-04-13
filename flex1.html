@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        section{
+            width: 100%;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+        section div{
+            width: 30%;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .flex1{
+            background-color: coral;
+        }
+        .flex2{
+            background-color: darkkhaki;
+        }
+        .flex3{
+            background-color: lightgreen;
+        }
+        @media(max-width:768px){
+            section{
+            flex-direction: column;
+            justify-content: space-between;
+            
+
+        }
+
+        } 
+        @media(max-width: 500px){
+            section{
+                width: 350px;
+            }
+        }  
+        
+        @media(max-with: 350px){
+            section{
+                width: 280px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+  <section>
+    <div class="flex1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, commodi at soluta deleniti nam libero laboriosam quam pariatur enim reiciendis debitis dolor adipisci labore magni. Nobis cupiditate illo neque quod debitis quae maiores adipisci hic, eaque maxime amet suscipit dolor, consequuntur exercitationem. Porro natus ea, similique temporibus eos praesentium mollitia.</div>
+    <div class="flex2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio hic culpa, nostrum iste voluptas, voluptatum explicabo velit rerum, numquam provident enim officiis praesentium dolorem. Recusandae dicta corrupti aliquid natus? Eos sint exercitationem aliquam reiciendis quae rem voluptate deleniti eaque blanditiis culpa, nobis quas deserunt fuga veniam similique ratione, expedita ipsa.</div>
+    <div class="flex3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, eos temporibus placeat repellat esse quia pariatur aperiam error aspernatur optio omnis sequi fuga libero perspiciatis! Porro repudiandae id voluptatem laudantium nemo, unde ratione possimus quas voluptates excepturi labore recusandae iusto aperiam? Placeat praesentium, </div>
+
+  </section>  
+</body>
+</html>

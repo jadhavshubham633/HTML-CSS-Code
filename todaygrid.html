@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background: rgb(121,9,118);
+background: linear-gradient(180deg, rgba(121,9,118,1) 13%, rgba(109,151,57,1) 26%, rgba(89,119,162,1) 36%, rgba(61,66,192,1) 50%, rgba(209,45,208,1) 58%, rgba(223,98,161,1) 65%, rgba(205,119,135,1) 72%, rgba(0,212,255,1) 80%, rgba(255,0,26,1) 99%);
+        }
+        .box{
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .container{
+            width: 80%;
+            border: 2px solid #d2d3ba;
+            margin: 20px auto;
+            display: grid;
+            grid-template-rows: 150px 150px 150px;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 10px;
+        }
+        p{
+            color: aliceblue;
+        }
+        h3{
+            color: aliceblue;
+        }
+        #heading1{
+            color: aliceblue;
+            background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+            grid-column: 1/2;
+        }
+        #heading2{
+            background-color: darkturquoise;
+            grid-column: 2/3;
+
+        }
+        #heading3{
+            background-color: rgb(22, 199, 99);
+            grid-column: 3/4;
+        }
+        #heading4{
+            color: aliceblue;
+            background-color: rgba(0, 0, 0, 0.884);
+            grid-column: 4/-1;
+
+        }
+        #heading5{
+            background-color: cornflowerblue;
+            grid-row: 2/-1;
+
+        }
+        #heading6{
+            color: aliceblue;
+            background-color: black;
+            grid-column: 2/4;
+            grid-row: 2/3;
+        
+        }
+        #heading7{
+            background-color: aqua;
+            grid-column: 2/3;
+        }
+        #heading8{
+            background-color: rgb(43, 236, 162);
+            grid-column: 3/4;
+        }
+        #heading9{
+            background-color: cornflowerblue;
+            grid-row: 2/-1;
+            
+        }
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="heading1">
+        <h2>heading1</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, voluptatibus.</p>
+    </div>
+    <div class="box"id="heading2">
+        <h2>heading2</h2>
+    </div>
+    <div class="box"id="heading3">
+        <h2>heading3</h2>
+    </div>
+    <div class="box"id="heading4">
+        <h2>heading4</h2>
+    </div>
+    <div class="box"id="heading5">
+        <h2>heading5</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="box"id="heading6">
+        <h2>heading6</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet optio est exercitationem pariatur asperiores cumque.</p>
+    </div>
+    <div class="box"id="heading7">
+        <h2>heading7</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, molestias. Placeat nulla laudantium voluptatibus accusantium!</p>
+    </div>
+    <div class="box"id="heading8">
+        <h2>heading8</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, molestias. Placeat nulla laudantium voluptatibus accusantium!</p>
+    </div>
+    <div class="box"id="heading9">
+        <h2>heading9</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, molestias. Placeat nulla laudantium voluptatibus accusantium!</p>
+    </div>
+  </div>  
+</body>
+</html>

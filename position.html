@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .container{
+            border: 2px solid black;
+            height: 12000px;
+            width: 98%;
+            margin: auto;
+
+        }
+       .box{
+        border: 2px solid green;
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+       } 
+       #box1{
+        margin: 0px;
+        width: 98%;
+        height: 50px;
+        position: sticky;
+        top: 10px;
+       }
+        /* #box2{
+        position: relative;
+        top: 50px;
+        left: 50px;
+       } */
+       #box3{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+       }  
+       #box4{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+       }
+      
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="box"id="box1">
+            <h2>box1</h2>
+        </div>     
+        <div class="box"id="box2">
+            <h2>box2</h2>
+        </div>   
+        <div class="box"id="box3">
+            <h2>box3</h2>
+        </div>
+        <div class="box"id="box4">
+            <h2>box4</h2>
+        </div>
+        <div class="box"id="box5">
+            <h2>box5</h2>
+            
+        </div>
+    </div>
+</body>
+</html>

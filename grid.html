@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            border: 2px solid black;
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: 200px 200px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            grid-auto-rows: 200px;
+            height: 650px;
+        }
+        #box1{
+            background-color: aqua;
+            grid-column: 1/-1;
+            position: sticky;
+            top: 10px;
+        }
+        #box2{
+            background-color: aquamarine;
+            grid-row: 2/4;
+        
+        }
+        #box3{
+            background-color: blueviolet;
+        }
+        #box4{
+            background-color: brown;
+        }
+        #box5{
+            background-color: burlywood;
+            grid-column: 2/-1;
+        }
+        footer{
+            background-color: rgba(0, 0, 0, 0.37);
+            height: 50px;
+        }
+
+        img{
+            height: 140px;
+            width: 328px;
+            
+        }
+
+        a{
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px;
+            text-decoration: none;
+            
+        }
+        .first{
+            float: right;
+        }
+        
+    
+        
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="box1">
+        <h3>box1</h3>
+       <div class="first"> <a href="/index.html">home</a>
+        <a href="/form.html">about</a>
+        <a href="/jadhav.html">service</a> 
+        </div>
+    </div>
+    <div class="box" id="box2">
+        <h3>box2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quibusdam voluptatum unde dolore voluptates ipsum architecto voluptatibus tempore, similique quasi minus praesentium omnis, in minima ipsam sit nostrum ullam harum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui pariatur consequuntur dicta earum perferendis illo recusandae consectetur facilis sit, nobis nulla tempora architecto in veniam, officiis dolorum deleniti fugit repellat ipsa illum? Recusandae iste quidem repellendus corrupti iusto qui consectetur quaerat, omnis expedita fugit id vitae accusantium? Facere, vel corporis.</p>
+    </div>
+    <div class="box" id="box3">
+        <h3>box3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, illo. Ad est repudiandae qui illum tenetur. Corporis quam voluptate possimus nobis odit voluptatem cumque voluptas, voluptates ipsum mollitia, repudiandae excepturi, quibusdam nulla tempore dolorem dignissimos ea quia aliquam. Odit vitae, beatae quaerat cum alias enim totam consequatur quibusdam ipsum deserunt.</p>
+    </div>
+    <div class="box" id="box4">
+        <h3>box4</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore ab aut quaerat, cumque autem esse iure iste eaque sit officia aperiam, provident voluptatum commodi itaque vero? Consectetur impedit odit vitae labore repellat totam quae sunt porro ipsam, amet error voluptates similique aliquid sit esse tempora! Qui ab molestias debitis dicta?</p>
+    </div>
+    <div class="box" id="box5">
+        <h3>box5</h3>
+        <img src="/images/3.jpg" alt="" srcset="">
+    </div>
+    
+  </div>  
+<footer>
+    shubham jadhav
+</footer>
+</body>
+</html>

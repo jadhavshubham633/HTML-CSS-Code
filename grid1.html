@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-rows: 100px 430px 100px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap:10px;
+            grid-auto-rows: 150px;
+            height: 650px;
+            
+        }
+        #header{
+            background-color: aqua;
+            grid-column: 1/-1;
+            position: sticky;
+            top: 10px;
+
+        }
+        #article{
+            background-color: aquamarine;
+            width: 600px;
+
+        }
+        #nav{
+            background-color: rgb(123, 123, 197);
+            
+            
+            
+        }
+        #ads{
+            background-color: blueviolet;
+            
+        }
+        #footer{
+            background-color: brown;
+            grid-column: 1/-1;
+
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <div class="box" id="header">
+            <h3>header</h3>
+        </div>
+        <div class="box" id="article">
+            <h3>article</h3>
+        </div>
+        <div class="box" id="nav">
+            <h3>nav</h3>
+        </div>
+        <div class="box" id="ads">
+            <h3>ads</h3>
+        </div>
+        <div class="box" id="footer">
+            <h3>footer</h3>
+        </div>
+    </div>
+</body>
+</html>
