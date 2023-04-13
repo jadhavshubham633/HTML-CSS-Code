@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let num = prompt();
+        let temp = num;
+        last = num%10;
+        num = Math.floor(num/10);
+        second = num%10;
+        first = Math.floor(num/10);
+        result = (last**3)+(second**3)+(first**3);
+        // document.getElementById("demo").innerHTML = result;
+        if(temp==result){
+         document.getElementById("demo").innerHTML = temp+" is Armstrong number";
+        }
+        else{
+            document.getElementById("demo").innerHTML = temp+" is Not Armstrong number";
+        }
+    
+        
+       
+    </script>
+</body>
+</html>

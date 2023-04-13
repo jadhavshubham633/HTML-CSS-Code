@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+   
+    <script>
+        let i;
+        let fizz = "";
+        let buzz = "";
+        let text = "";
+        for(let i=1;i<=100;i++){
+            if(i%3===0 && i%5===0){
+                text+= i+"FizzBuzz";
+                document.getElementById("demo").innerHTML = text+" FizzBuzz <br>";
+            }
+            else if (i%3===0){
+                fizz+= i+"Fizz";
+                document.getElementById("demo1").innerHTML = fizz+" Fizz <br>"; 
+            }
+            else if(i%5===0){
+                buzz+= i+"Buzz";
+                document.getElementById("demo2").innerHTML = buzz+" Buzz <br>";
+            } 
+        }
+    </script>
+</body>
+</html>

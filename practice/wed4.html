@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    let bonus =(30000*0.05);
+    let salary = 30000;
+    let service = 6;
+    if(service>5){
+        document.getElementById("demo").innerHTML = "monthly Salary is "+ salary + "<br>"+
+        "bonus is "+ bonus+"<br>"+ "final salary is "+(salary+bonus);
+    }
+    else{
+        document.getElementById("demo").innerHTML = "Monthly salary is "+ salary;
+    }
+
+  </script>  
+</body>
+</html> 

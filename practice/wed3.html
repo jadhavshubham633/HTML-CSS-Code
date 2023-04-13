@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <script>
+        let price = 100;
+        let unit = 11;
+        let total = price*unit;
+        let discount = (total/10);
+        let Amount = (total-discount);
+        if (total>1000){
+            document.getElementById("demo").innerHTML = "total price "+ total+"<br>"
+            +" you got 10% discount "+ discount + "<br>"+
+            "total Amount "+ Amount;
+
+
+        }
+        else{
+            document.getElementById("demo").innerHTML = "Total amout is Rs  "+total; 
+        }
+    </script>
+</body>
+</html>

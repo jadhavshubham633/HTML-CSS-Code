@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="demo"></p>
+   <script>
+    let age = 10;
+    let gender = "male";
+    if(gender=='female'){
+        document.getElementById("demo").innerHTML = "she will work only in urban ares";
+    }
+    else if(gender=='male'&& (age>=20 && age<40)){
+        document.getElementById("demo").innerHTML = "work in anywhere"; 
+    }
+    else if(gender=='male'&& (age>=40 && age<60)){
+        document.getElementById("demo").innerHTML = "he will work in urban areas"; 
+    }
+    else{
+        document.getElementById("demo").innerHTML = "Error";  
+    }
+
+   
+   </script> 
+</body>
+</html>

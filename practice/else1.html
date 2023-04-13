@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+       let class_held = 100;
+       let class_attend = 60;
+       let medical_cause = 'N';
+       let percentage = class_attend/class_held*100;
+       if(percentage>=75 && medical_cause == 'Y'){
+        document.getElementById("demo").innerHTML = "allowed to sit in exam";
+       }
+     else if(percentage>=75 && medical_cause == 'N'){
+        document.getElementById("demo").innerHTML = "allowed to sit in exam";
+       }
+       else if(percentage<75 && medical_cause == 'Y'){
+        document.getElementById("demo").innerHTML = "allowed to sit in exam";
+       }
+       else if(percentage<75 && medical_cause == 'N'){
+        document.getElementById("demo").innerHTML = "Not allowed to sit in exam";
+       }
+       else{
+        document.getElementById("demo").innerHTML = "Enter a valid marks";
+       }
+       
+    </script>
+</body>
+</html>

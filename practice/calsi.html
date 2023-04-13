@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+
+
+    <script>
+        let x = Number(prompt("Enter first Number"));
+        let y = Number(prompt("Enter second Number"));
+        let z;
+        let op = prompt("Enter Operator to perform Operation: +, -, *, /");
+
+        switch(op){
+            case  '+':
+            z = x + y;
+            document.getElementById("demo").innerHTML = z; 
+            break;
+            case '-':
+            z = x - y;
+            document.getElementById("demo").innerHTML = z; 
+            break;    
+            case '*':
+            z = x * y;
+            document.getElementById("demo").innerHTML = z; 
+            break;  
+            case '/':
+            z = x / y;
+            document.getElementById("demo").innerHTML = z; 
+            break;   
+        }
+        
+
+        
+
+
+    </script>
+</body>
+</html>

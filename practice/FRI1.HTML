@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let Age = prompt("Enter a age");
+        let Gender = 'male';
+        let M_status = 'Yes';
+        if(Gender=='female'){
+            document.getElementById("demo").innerHTML = "she work only in urben areas";
+        }
+        else if(Gender=='male' && (Age>=20 && Age<=40)){
+            document.getElementById("demo").innerHTML = "he may work in any where";
+        }
+        else if(Gender=='male' && (Age>=41 && Age<=60)){
+            document.getElementById("demo").innerHTML = "he may work in only urben areas";
+        }
+        else{
+            document.getElementById("demo").innerHTML = "ERROR"; 
+        }
+
+    </script>
+</body>
+</html>

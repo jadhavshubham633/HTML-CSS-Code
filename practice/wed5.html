@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        let Marks = 75;
+        if((Marks<=100)&&(Marks>80)){
+            document.getElementById("demo").innerHTML = "A";
+        }
+        else if((Marks<=80)&&(Marks>60)){
+            document.getElementById("demo").innerHTML = "B";
+        }
+        else if((Marks<=60)&&(Marks>50)){
+            document.getElementById("demo").innerHTML = "C";
+        }
+        else if((Marks<=50)&&(Marks>45)){
+            document.getElementById("demo").innerHTML = "D";
+        }
+        else if(Marks<=45){
+            document.getElementById("demo").innerHTML = "Fail";
+        }
+        else{
+            document.getElementById("demo").innerHTML = "Enter valid Marks"; 
+        }
+    
+    </script>
+</body>
+</html>

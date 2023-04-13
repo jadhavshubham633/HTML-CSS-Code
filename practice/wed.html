@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <!-- <script>
+        let x = 57431;
+        first = Math.floor(x/10000);
+        x = x % 10000;
+        second = Math.floor(x/1000);
+        x = x % 1000;
+        third = Math.floor(x/100);
+        x = x % 100;
+        fourth = Math.floor(x/10);
+        fifth = x % 10;
+        document.getElementById("demo").innerHTML = first + fourth
+    </script> -->
+    <script>
+        let x = 6437;
+        first = Math.floor(x/1000);
+        x = x % 1000;
+        second = Math.floor(x/100);
+        x = x % 100;
+        third = Math.floor(x/10);
+        fourth = x % 10;
+        document.getElementById("demo1").innerHTML =
+        (first+2)*1000 + (second+2)*100 + (third+2)*10 + (fourth+2);
+        
+
+    
+    </script>
+</body>
+</html>
