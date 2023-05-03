@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        class Vehicle{
+            constructor(make,model,year){
+                this.make = make;
+                this.model = model;
+                this.year = year;
+            }
+        }
+        class Car extends Vehicle{
+            constructor(make,model,year,numdoor){
+                super(make,model,year);
+                this.numdoor = numdoor;
+            }
+            drive(){
+                return this.numdoor+" Vroom vroom";
+            }
+        }
+        class Truck extends Vehicle{
+            constructor(make,model,year,payload){
+                super(make,model,year);
+                this.payload = payload;
+            }
+            haul(){
+                return this.payload+" Time to move some cargo";
+            }
+        }
+        class Cycle extends Vehicle{
+            constructor(make,model,year,enginesize){
+                super(make,model,year);
+                this.enginesize = enginesize;
+            }
+            rev(){
+                return this.enginesize+" Vroom vroom";
+            }
+        }
+        const mycar = new Car("tata","Ford",2018,"4 DOOR"); 
+        const mytruck = new Truck("mahindra","ashokleyland",2017,"20 TONE");
+        const mycycle = new Cycle("Bosch","yamaha",2015,"150 CC");
+        document.getElementById("demo").innerHTML = mycar.drive();
+        document.getElementById("demo1").innerHTML = mytruck.haul();
+        document.getElementById("demo2").innerHTML = mycycle.rev();
+
+    </script>
+</body>
+</html>
