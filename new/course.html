@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .course{
+            width: 100%;
+            height: 480px;
+            background: rgb(170,196,255);
+            background: linear-gradient(180deg, rgba(110, 124, 251, 1) 0%, rgba(39, 49, 142, 1) 100%);
+        }
+        .head h2{
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            padding-bottom: 30px;
+        }
+        .blank{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .white{
+            width: 420px;
+            height: 334px;
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            margin: auto;
+        }
+        .white .pic img{
+            border-radius: 20px;
+        }
+        .text h4{
+            font-size: 18px;
+            color: #070a13;
+            text-align: center;
+            margin: 10px;
+            padding-left: 20px;
+        }
+        .box{
+            display: flex;
+            justify-content: space-between;
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+        }
+        .para span{
+            padding-right: 35px;
+        }
+        #demo{
+            width: 20px;
+            height: 20px;
+        }
+         
+        .btn a{
+            width: 110px;
+            height: 28px;
+            border-radius: 24px;
+            color: white;
+            background-color: indianred;
+            padding: 10px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            right: 0;
+            position: absolute;
+            margin: 20px;
+            text-align: center;
+        }
+        .hello{
+            background-color: #2c3968;
+            padding-bottom: 20px;
+            margin: auto;
+            width: 360px;
+            height: 0.3px;
+            border-radius: 10px; 
+        }
+        
+
+        
+        
+            
+
+        
+    </style>
+</head>
+<body>
+    <section class="course">
+        <div class="head">
+            <h2>Our Courses</h2>
+        </div>
+        <div class="blank">
+            <div class="white">
+                <div class="pic">
+                    <img src="/game.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h4>Game designs Essentials</h4>
+                    </div>
+                    <div class="info">
+                        <img src="https://img.icons8.com/material-sharp/24/null/clock.png"/ id="demo">
+                        <div class="para">
+                            <span>HRS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hello"></div>
+                
+            </div>
+
+            <div class="white">
+                <div class="pic">
+                    <img src="/game.jpg" alt="">
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <h4> Unity Game Engine Fundamentals</h4>
+                    </div>
+                    <div class="info">
+                        <img src="https://img.icons8.com/material-sharp/24/null/clock.png"/ id="demo">
+                        <div class="para">
+                            <span>HRS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hello"></div>
+            </div>
+        </div>
+
+        <div class="btn">
+            <a href="#">All Courses</a>
+        </div>
+        
+    
+    </section>
+</body>
+</html>
