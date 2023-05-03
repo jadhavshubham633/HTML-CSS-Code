@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        class Animal{
+            constructor(name,age,type){
+                this.name = name;
+                this.age = age;
+                this.type = type;
+            }
+        }
+        class Dog extends Animal{
+            constructor(name,age,breed){
+                super(breed);
+                this.breed = breed;
+            }
+            bark(){
+                return this.breed+" type dog is Woofing";
+            }
+        }
+        class Cat extends Animal{
+            constructor(name,age,color){
+                super(color);
+                this.color = color;
+            }
+            meow(){
+                return this.color+" cat is meowing";
+            }
+        }
+        class Bird extends Animal{
+            constructor(name,age,wingspan){
+                super(wingspan);
+                this.wingspan = wingspan;
+            }
+            fly(){
+                return "Parrot can fly with its "+this.wingspan;
+            }
+        }
+        const mydog = new Dog("Rocky",5,"bull");
+        const mycat = new Cat("suzi",7,"black");
+        const mybird = new Bird("parrot",9,"wing");
+        document.getElementById("demo").innerHTML = mydog.bark();
+        document.getElementById("demo1").innerHTML = mycat.meow();
+        document.getElementById("demo2").innerHTML = mybird.fly();
+
+    </script>
+</body>
+</html>
